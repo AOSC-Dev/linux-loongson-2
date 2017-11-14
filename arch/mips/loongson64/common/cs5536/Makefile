@@ -3,7 +3,7 @@
 #
 
 obj-$(CONFIG_CS5536) += cs5536_pci.o cs5536_ide.o cs5536_acc.o cs5536_ohci.o \
-			cs5536_isa.o cs5536_ehci.o
+			cs5536_isa.o cs5536_ehci.o cs5536_smb.o
 
 #
 # Enable cs5536 mfgpt Timer
