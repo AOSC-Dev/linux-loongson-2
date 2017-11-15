@@ -46,7 +46,7 @@ static struct plat_serial8250_port uart8250_data[][MAX_UARTS + 1] = {
 	[MACH_LEMOTE_YL2F89]	= {PORT_M(3, 3686400), {} },
 	[MACH_DEXXON_GDIUM2F10]	= {PORT_M(3, 3686400), {} },
 	[MACH_LEMOTE_NAS]	= {PORT_M(3, 3686400), {} },
-	[MACH_LEMOTE_LL2F]	= {PORT(3, 1843200), {} },
+	[MACH_LEMOTE_LL2F02]	= {PORT(3, 1843200), {} },
 	[MACH_LOONGSON_GENERIC]	= {PORT_M(2, 25000000), {} },
 	[MACH_LOONGSON_END]	= {},
 };

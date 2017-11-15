@@ -26,15 +26,17 @@ void __init mach_prom_init_machtype(void)
 	 *		 LM8101		Lemote 10.1'' netbook
 	 *	(The above two netbooks have the same kernel support)
 	 *		 LM6XXX		Lemote FuLoong(2F) box series
-	 *		 LM9XXX		Lemote LynLoong PC series
+	 *		 LM9001,LM9002		Lemote LynLoong 9002 PC (9001 and 9002 are identical on hardware)
 	 */
 	if (strstr(arcs_cmdline, "PMON_VER=LM")) {
 		if (strstr(arcs_cmdline, "PMON_VER=LM8"))
 			mips_machtype = MACH_LEMOTE_YL2F89;
 		else if (strstr(arcs_cmdline, "PMON_VER=LM6"))
 			mips_machtype = MACH_LEMOTE_FL2F;
-		else if (strstr(arcs_cmdline, "PMON_VER=LM9"))
-			mips_machtype = MACH_LEMOTE_LL2F;
+		else if (strstr(arcs_cmdline, "PMON_VER=LM9001"))
+			mips_machtype = MACH_LEMOTE_LL2F02;
+		else if (strstr(arcs_cmdline, "PMON_VER=LM9002"))
+			mips_machtype = MACH_LEMOTE_LL2F02;
 		else
 			mips_machtype = MACH_LEMOTE_NAS;
 

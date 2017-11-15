@@ -32,7 +32,7 @@ void prom_init_loongson_uart_base(void)
 		loongson_uart_base[0] = LOONGSON_PCIIO_BASE + 0x3f8;
 		break;
 	case MACH_LEMOTE_FL2F:
-	case MACH_LEMOTE_LL2F:
+	case MACH_LEMOTE_LL2F02:
 		loongson_uart_base[0] = LOONGSON_PCIIO_BASE + 0x2f8;
 		break;
 	case MACH_LEMOTE_ML2F7:

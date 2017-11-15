@@ -125,7 +125,7 @@ void mach_prepare_reboot(void)
 	switch (mips_machtype) {
 	case MACH_LEMOTE_FL2F:
 	case MACH_LEMOTE_NAS:
-	case MACH_LEMOTE_LL2F:
+	case MACH_LEMOTE_LL2F02:
 		fl2f_reboot();
 		break;
 	case MACH_LEMOTE_ML2F7:
@@ -144,7 +144,7 @@ void mach_prepare_shutdown(void)
 	switch (mips_machtype) {
 	case MACH_LEMOTE_FL2F:
 	case MACH_LEMOTE_NAS:
-	case MACH_LEMOTE_LL2F:
+	case MACH_LEMOTE_LL2F02:
 		fl2f_shutdown();
 		break;
 	case MACH_LEMOTE_ML2F7:
