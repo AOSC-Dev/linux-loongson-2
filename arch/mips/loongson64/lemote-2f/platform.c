@@ -21,6 +21,10 @@ static struct platform_device yeeloong_pdev = {
 	.id = -1,
 };
 
+static struct platform_device lynloong_9002_pdev = {
+	.name = "lynloong_9002_pc",
+	.id = -1,
+};
 
 static int __init lemote2f_platform_init(void)
 {
@@ -29,6 +33,10 @@ static int __init lemote2f_platform_init(void)
 	switch (mips_machtype) {
 	case MACH_LEMOTE_YL2F89:
 		pdev = &yeeloong_pdev;
+		break;
+
+	case MACH_LEMOTE_LL2F02:
+		pdev = &lynloong_9002_pdev;
 		break;
 
 	default:
