@@ -41,4 +41,18 @@ config LEMOTE_YEELOONG2F
 	  Controller(kb3310b) for battery, hotkey, backlight, temperature and
 	  fan management.
 
+config LEMOTE_LYNLOONG2F_9002
+	tristate "Lemote LynLoong 9002 (ALL-IN-ONE) PC"
+	depends on LEMOTE_MACH2F
+	select BACKLIGHT_LCD_SUPPORT
+	select LCD_CLASS_DEVICE
+	select BACKLIGHT_CLASS_DEVICE
+	default m
+	help
+	  LynLoong PC is an AllINONE machine made by Lemote, which is basically
+	  compatible to FuLoong2F Mini PC, the only difference is that it has sis
+	  315E video card. and also, it has its own specific suspend support.
+	  This driver adds the lynloong specific backlight driver and platform
+	  driver(mainly the suspend support).
+
 endif # MIPS_PLATFORM_DEVICES
